@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+	<title>Diabetes_pred</title>
+    
+</head>
+	<style>
+    #main-footer
+    {
+      color: #FFFFFF;
+      font-family: "Segoe UI";
+      background: #2B2B2B;
+      text-align: center;
+      margin-top: 125px;
+      padding: 16px;
+      bottom: 8px;
+    }</style>
+<body>
+    <header class="site-header">
+  <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+    <div class="container">
+      <a class="navbar-brand mr-4" href="/">Health Mate</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarToggle">
+        <div class="navbar-nav mr-auto">
+          <a class="nav-item nav-link" href="/">Home</a>
+
+          <a class="nav-item nav-link" href="/cancer">Cancer</a>
+          <a class="nav-item nav-link" href="/diabetes">Diabetes</a>
+          <a class="nav-item nav-link" href="/heart">Heart</a>
+          <a class="nav-item nav-link" href="/liver">Liver</a>
+          <a class="nav-item nav-link" href="/kidney">Kidney</a>
+        </div>
+        <!-- Navbar Right Side
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="/login">Login</a>
+          <a class="nav-item nav-link" href="/register">Register</a>
+        </div>-->
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="container",class="form-group">
+        <h1><center><b>Diabetes Diagnosis</b></center></h1>
+
+<div style="text-align: center; margin-top: 20px">
+       <img style="max-width: 450px" src="{{ url_for('static', filename='diabetes2.jpg') }}"/>
+   </div>
+<p>
+<br>
+Diabetes mellitus is a chronic condition characterised by high levels of sugar (glucose) in the blood.
+It affects how the body controls and uses glucose, and people with diabetes have chronic high blood glucose levels (hyperglycaemia).
+Without ongoing careful management, diabetes can lead to a buildup of sugars in the blood, which can increase the risk of dangerous complications, including stroke and heart disease.
+
+There can be different types of diabetes, and managing the condition often depends on the type. Type 1 diabetes makes up for 10% of the cases and is a chronic autoimmune disease that develops when the immune system destroys the insulin-producing cells of the pancreas. People with type 1 diabetes require insulin replacement every day. 
+Type 2 diabetes makes up for 80% of dignosed cases and is usually caused by lifestyle factors. It occurs when the body becomes resistant to insulin and/or the body does not produce adequate insulin and is often preventable by keeping a healthy lifestyle. 
+</p>
+<h3>Symptoms</h3>
+<p>General symptoms of diabetes include:</p>
+
+ <ul>
+  <li>Increased hunger and fatigue</li>
+  <li>Unplanned weight loss</li>
+  <li>Frequent urination and increased thirst</li>
+  <li>Dry mouth and itchy skin</li>
+  <li>Increased time for healing of wounds</li>
+</ul>
+<br> 
+<hr>
+<br>
+
+
+
+
+
+    <h3>Kindly fill in the following fields :</h3><br>
+  <form action="/result" method="POST">
+
+    <div class="two-col">
+<center>
+    <div class="col1">
+
+    <input type="text" id="Pregnancies" name="Pregnancies" placeholder="Pregnancies"><br>
+    <br>
+
+    <input type="text" id="Glucose" name="Glucose" placeholder="Glucose"><br>
+    <br>
+
+    <input type="text" id="BloodPressure" name="BloodPressure" placeholder="BloodPressure"><br>
+    <br>
+
+    <input type="text" id="SkinThickness" name="SkinThickness" placeholder="SkinThickness"><br>
+    <br>
+</div>
+<div class="col2">
+
+    <input type="text" id="Insulin" name="Insulin" placeholder="Insulin"><br>
+    <br>
+
+    <input type="text" id="BMI" name="BMI" placeholder="BMI"><br>
+    <br>
+
+    <input type="text" id="DiabetesPedigreeFunction" name="DiabetesPedigreeFunction" placeholder="DiabetesPedigreeFunction"><br>
+    <br>
+
+    <input type="text" id="Age" name="Age" placeholder="Age">
+</div>
+</center>
+</div>
+  
+
+
+
+    <input type="submit" class="diabetesbutton" value="Submit"><br><br>
+</form>
+
+
+    </div>
+
+
+
+
+<!-- Footer -->
+    <div class='footer'>
+           <div class="contactus">
+             <h2>Connect with us</h2>
+             </n> 
+             <p>Get in touch for queries and feedback at : +91-9820052883 or email us at : hrijhwani99@gmail.com </p>
+           </div>
+           <div class="contact">
+               <a target="_blank" href="https://github.com/HeenaR17"><i class="fab fa-github fa-lg contact-icon"></i></a>
+               <a target="_blank" href="http://linkedin.com/in/heena-rijhwani"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
+           </div>
+           <p class='footer-description'><b>Made by Heena Rijhwani, Disha Motwani and Thackur Sahijwala</b></p>
+       </div>
+</body>
+</html>

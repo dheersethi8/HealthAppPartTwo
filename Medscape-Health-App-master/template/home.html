@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+<title>Home</title>
+<!-- CSS -->
+<script type = "text/javascript">
+  <!--
+     function putDisclaimer() {
+        alert("DISCLAIMER: This website is used for demonstrative and illustrative purposes only and does not constitute an offering that has gone through regulatory review. It is not intended to serve as a medical application. There is no representation as to the accuracy of the output of this application and it is presented without warranty.")
+     }
+  //-->
+</script>   
+</head>
+    <style>
+    #main-footer
+    {
+      color: #FFFFFF;
+      font-family: "Segoe UI";
+      background: #2B2B2B;
+      text-align: center;
+      margin-top: 108px;
+      padding: 16px;
+      bottom: 8px;
+    }</style>
+<body>
+
+  <header class="site-header">
+  <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+    <div class="container">
+
+     
+
+      <a class="navbar-brand mr-4" href="/">Health Mate</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarToggle">
+        <div class="navbar-nav mr-auto">
+          
+          <a class="nav-item nav-link" href="/cancer">Cancer</a>
+          <a class="nav-item nav-link" href="/diabetes">Diabetes</a>
+          <a class="nav-item nav-link" href="/heart">Heart</a>
+          <a class="nav-item nav-link" href="/liver">Liver</a>
+          <a class="nav-item nav-link" href="/kidney">Kidney</a>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+  <div class= "container">
+
+    <h1><i><b><center>Your Machine Learning Health Assistant</center></b></i></h1></p>
+            <div class='description'>
+    			<p><center>Enabling early diagnosis of symptoms and diseases</center></p>
+    		</div>
+
+
+	<div style="text-align: center; margin-top: 20px">
+		<img style="max-width: 300px" src="{{ url_for('static', filename='LogoForHome.png') }}"/><br><br>
+   	</div>
+    <input type="button" onclick="putDisclaimer()" value="DISCLAIMER" />
+
+    <p>
+      <h3>Overview</h3>
+     In a densely populated country like India, there is a disparity between the number of patients to the number of specialists.
+    </p>
+	<p>
+	Artificial Intelligence acts as a tool to dramatically improve the accessibility, reach and affordability of health care systems. By expediting the
+  process of detecting symptoms and diseases, it helps increase the chances of survival.
+	</p>
+        <p>Health Mate aims to aid physicians in the decision making process, fasten the detection of diseases, and make health care more consumer centric.
+	One can diagnose the following health conditions : 
+	<ul>
+		<li>Breast Cancer</li>
+		<li>Diabetes</li>
+		<li>Heart Conditions</li>
+		<li>Liver Conditions</li>
+		<li>Kidney Conditions</li>
+	</ul>	
+
+        </p>
+        <hr>
+    </p>
+    <h3>Use Cases</h3>
+    <ul>
+      <li>To reduce reliance on specialists.</li>
+      <li>To aid the clinical decision-making process.</li>
+      <li>To improve the accuracy of diagnosis.</li>
+      <li>To increase efficiency of medical care.</li>
+      <li>To better clinical outcomes.</li>
+
+    </ul>
+    <iframe id="if1" width="100%" height="450" style="visibility:visible" src="https://www.bing.com/news/search?q=Health&qs=n&form=QBNT&sp=-1&pq=health&sc=8-6&sk=&cvid=8191287C4AA443BE89090E424A192AE3"></iframe>
+
+
+  </div>
+
+
+<!-- Footer -->
+    <div class='footer'>
+           <div class="contactus">
+            <h2>Connect with us</h2>
+            </n> 
+            <p>Get in touch for queries and feedback at : +91-9820052883 or email us at : hrijhwani99@gmail.com </p>
+           </div>
+           <div class="contact">
+               <a target="_blank" href="https://github.com/HeenaR17"><i class="fab fa-github fa-lg contact-icon"></i></a>
+               <a target="_blank" href="http://linkedin.com/in/heena-rijhwani"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
+           </div>
+           <p class='footer-description'><b>Made by Heena Rijhwani, Disha Motwani and Thackur Sahijwala</b></p>
+       </div>
+</body>
+</html>
